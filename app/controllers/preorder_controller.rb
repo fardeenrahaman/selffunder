@@ -26,7 +26,7 @@ class PreorderController < ApplicationController
 
     client = BitPay::Client.new 'WhKEQa85Z6ngwvPVckvcxu1vVzTzMXiOH17PlYHH4'
     invoice = client.post 'invoice', {:price => 0.01, :currency => 'BTC'}
-    binding.pry
+    
     # This is where all the magic happens. We create a multi-use token with Amazon, letting us charge the user's Amazon account
     # Then, if they confirm the payment, Amazon POSTs us their shipping details and phone number
     # From there, we save it, and voila, we got ourselves a preorder!

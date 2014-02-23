@@ -1,3 +1,5 @@
+require 'bitpay'
+
 class PreorderController < ApplicationController
   skip_before_action :verify_authenticity_token, :only => :ipn
 
@@ -35,7 +37,7 @@ class PreorderController < ApplicationController
     #                                             :collect_shipping_address => "True",
     #                                             :payment_reason => Settings.payment_description)
 
-    invoice["url"] + &view=iframe
+    @invoice_url = invoice["url"] + "&view=iframe"
   end
 
   def postfill

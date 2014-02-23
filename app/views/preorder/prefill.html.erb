@@ -5,7 +5,41 @@
 			<p>
 				Your Invoice for SmartSole:
 			</p>
-			<iframe src="https://bitpay.com/invoice?id=DGrAEmbsXe9bavBPMJ8kuk" frameborder="0"></iframe>
+			<iframe src="https://bitpay.com/img/embeddednewinvoice.png" frameborder="20"></iframe>
 		</div>
 	</div>
+</div>
+
+<div class="form-container"> 
+
+<!-- from paypal -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="XXXXXXXXXXXX">
+    <p>
+        <input type="hidden" name="on0" value="200GB/2GB RAM">200GB/2GB RAM
+    </p>
+    <p>    
+        <select name="os0">
+            <option value="1 MONTH">1 MONTH $25.00 USD</option>
+            <option value="3 MONTHS">3 MONTHS $65.00 USD</option>
+        </select>
+    </p>
+
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="image" src="http://i.imgur.com/ORLogUb.png" border="0" name="submit"
+alt="PayPal - The safer, easier way to pay online!" class="button-paypal">
+    <img alt="" border="0" src="http://i.imgur.com/ORLogUb.png" width="1" height="1">
+</form>
+<!-- /from paypal -->
+
+<!-- form bitpay -->    
+<form action="https://bitpay.com/checkout" method="post">
+    <input type="hidden" name="action" value="cartAdd" />
+    <input type="hidden" name="data" value="XXXXXXXXXXXXXXXXXX" />
+    <input type="image" src="http://i.imgur.com/pSatyZL.png" name="submit"
+alt="BitPay, pay with bitcoins." class="button-bitpay">
+</form>
+<!-- /form bitpay -->
+
 </div>

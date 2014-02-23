@@ -25,9 +25,9 @@ h3 {
 }
 
 #one {
-  background: url(image_path("1-background.png")) no-repeat bottom left;
+  background: url(image_path("1-background.png")) no-repeat bottom right;
   height: 250px;
-  width: 936px;
+  width: 750px;
 }
 
 #two {
@@ -36,12 +36,17 @@ h3 {
 }
 
 #three {
-  background: url(image_path("3-background.png")) no-repeat bottom left;
+  background: url(image_path("3-background.png")) no-repeat bottom right;
   height: 250px;
 }
 
 #four {
   background: url(image_path("4-background.png")) no-repeat bottom left;
+  height: 250px;
+}
+
+#five {
+  background: url(image_path("background.png")) no-repeat bottom right;
   height: 250px;
 }
 

@@ -34,6 +34,8 @@ class PreorderController < ApplicationController
     #                                             :global_amount_limit => price + Settings.charge_limit,
     #                                             :collect_shipping_address => "True",
     #                                             :payment_reason => Settings.payment_description)
+
+    invoice["url"] + &view=iframe
   end
 
   def postfill
